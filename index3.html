@@ -1,73 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" /> 
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      charset="UTF-8"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
+    />
     <style>
-        * {
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-            background-color: #0D0D0D;
-        }
-        body {
-          display: flex;
-          overflow-x: hidden;
-        }
-        .customer__slide {
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 10vw;
-            display: flex;
-            position: relative;
-        }
-        .slick-slide {
-            color: white;
-            /* padding: 40px 0; */
-            font-size: 30px;
-            font-family: "Arial", "Helvetica";
-            text-align: center;
-        }
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        background-color: #0d0d0d;
+      }
+      body {
+        display: flex;
+        overflow-x: hidden;
+      }
+      .customer__slide {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10vw;
+        display: flex;
+        position: relative;
+      }
+      .slick-slide {
+        color: white;
+        /* padding: 40px 0; */
+        font-size: 30px;
+        font-family: "Arial", "Helvetica";
+        text-align: center;
+      }
 
-        .slide_2 .slick-slide {
-          display: flex;
-          justify-content: end;
-        }
+      .slide_2 .slick-slide {
+        display: flex;
+        justify-content: end;
+      }
 
-        .slider-x .slick-next {
-            display: none !important;
-        }
-        .slider-nav .slick-prev {
-            display: none !important;
-        }
-        .slide__1 {
-            width: 57.8125vw;
-            border: 0.5px solid #FFC67E;
-        }
-        .slide__2 {
-            display: flex;
-        }
-        .slider-x .slider__image {
-            width: 34.875vw;
-            height: 20vw;
-            flex-shrink: 0;
-        }
-        .slider-nav .slider__image {
-            width: 13.3125vw !important;
-            height: 20vw !important;
-            flex-shrink: 0;
-        }
-        .slick-list {
-            padding: 0 !important;
-        }
-        .customer__feel-info > img {
-          width: 1.875vw;
-          height: 1.32813vw;
-          flex-shrink: 0;
-        }
+      .slider-x .slick-next {
+        display: none !important;
+      }
+      .slider-nav .slick-prev {
+        display: none !important;
+      }
+      .slide__1 {
+        width: 57.8125vw;
+        border: 0.5px solid #ffc67e;
+      }
+      .slide__2 {
+        display: flex;
+      }
+      .slider-x .slider__image {
+        width: 34.875vw;
+        height: 20vw;
+        flex-shrink: 0;
+      }
+      .slider-nav .slider__image {
+        width: 13.3125vw !important;
+        height: 20vw !important;
+        flex-shrink: 0;
+      }
+      .slick-list {
+        padding: 0 !important;
+      }
+      .customer__feel-info > img {
+        width: 1.875vw;
+        height: 1.32813vw;
+        flex-shrink: 0;
+      }
 
       .customer__feel-info {
         display: flex;
@@ -80,7 +89,7 @@
         font-style: normal;
         font-weight: 700;
         line-height: 1.25vw;
-        background: linear-gradient(92deg, #FFC67E 0.27%, #FFDFC2 95.42%);
+        background: linear-gradient(92deg, #ffc67e 0.27%, #ffdfc2 95.42%);
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -88,11 +97,11 @@
       }
 
       .customer__feel-info-position {
-        color: #B7B7B7;
+        color: #b7b7b7;
         font-size: 0.75vw;
         font-style: normal;
         font-weight: 600;
-        line-height: 1vw; 
+        line-height: 1vw;
         letter-spacing: 0.03125vw;
         text-align: left;
         margin-top: 0.25vw;
@@ -109,7 +118,7 @@
       }
 
       .customer__feel-info-text {
-        color: #D9D9D9;
+        color: #d9d9d9;
         font-size: 1vw;
         font-style: normal;
         font-weight: 400;
@@ -124,15 +133,15 @@
       }
 
       .customer__feel-info .customer__feel-info-button {
-        color:  #FFF;
+        color: #fff;
         text-align: center;
         font-size: 1vw;
         font-style: normal;
         font-weight: 700;
         line-height: 1.5vw;
         padding: 1vw 1.25vw;
-        background-color: #0D0D0D;
-        border: 0.2px solid #FFF;
+        background-color: #0d0d0d;
+        border: 0.2px solid #fff;
         cursor: pointer;
         display: flex;
         gap: 0.75vw;
@@ -153,7 +162,7 @@
       .slide_2 > div {
         width: 29.745vw;
         height: 23vw;
-        }
+      }
 
       .slide_2 .slick-list {
         margin: auto;
@@ -165,9 +174,9 @@
       .slide_2 .slick-track {
         display: flex;
       }
-      
+
       .slick-prev {
-        background: url('./assets/rowLeft.svg') !important;
+        background: url("./assets/rowLeft.svg") !important;
         background-size: contain !important;
         background-repeat: no-repeat !important;
         width: 3.625vw;
@@ -178,12 +187,13 @@
         display: none;
       }
 
-      .slick-prev::before, .slick-prev::before:active {
+      .slick-prev::before,
+      .slick-prev::before:active {
         display: block;
       }
 
       .slick-next {
-        background: url('./assets/rowRIght.svg') !important;
+        background: url("./assets/rowRIght.svg") !important;
         background-size: contain !important;
         background-repeat: no-repeat !important;
         width: 3.625vw;
@@ -202,149 +212,284 @@
         z-index: 100;
       }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="customer__slide">
-        <div class="slider slider-x slide__1">
-            <div class="customer__info">
-                <img class="slider__image" src="https://s3-alpha-sig.figma.com/img/1779/3ace/4835d96ef94d574349e2d8e07b85d618?Expires=1698019200&Signature=drxWcR1NsdmNOAMPQIrs9UjIOEO2Ym~DxzS-UVJUbJoLnHKYWDQpSVmpasdIKgAvJzOThFg1e47kQP29GtymOKUat3OT1Z6ID0zAKjRM19UVlzO3nmHmMecmIvsqas6sydaa5oqbqmEox9p2BxWbNuVLpMkGtEoqfqThOV2IBeEHV2BjT3g1NFFnKDSLSlazWfEv-iHfWFUugt99wbgPvh9dXmWcOj7O8VylQB2D~hGlqMK7LPaxHGbXjvNoeiUmPQ-RayjZ-hJ21gN1723qnmOzo5rAFdXv0DJwrV-GEdFthxb7rJEdkOvU~BnTsmduJ-RJDAk7BE69gPhg3wHPUA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
-                <div class="customer__feel-info">
-                    <h3 class="customer__feel-info-name">Hoàng Nam Tiến1</h3>
-                    <div class="customer__feel-info-position">Giám đốc</div>
-                    <img src="./assets/marks.svg" alt="">
-                    <p class="customer__feel-info-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-                    <button class="customer__feel-info-button">CHI TIẾT DỰ ÁN<img src/></button>
-              </div>
-            </div>
-            <div class="customer__info">
-                <img class="slider__image" src="https://s3-alpha-sig.figma.com/img/1779/3ace/4835d96ef94d574349e2d8e07b85d618?Expires=1698019200&Signature=drxWcR1NsdmNOAMPQIrs9UjIOEO2Ym~DxzS-UVJUbJoLnHKYWDQpSVmpasdIKgAvJzOThFg1e47kQP29GtymOKUat3OT1Z6ID0zAKjRM19UVlzO3nmHmMecmIvsqas6sydaa5oqbqmEox9p2BxWbNuVLpMkGtEoqfqThOV2IBeEHV2BjT3g1NFFnKDSLSlazWfEv-iHfWFUugt99wbgPvh9dXmWcOj7O8VylQB2D~hGlqMK7LPaxHGbXjvNoeiUmPQ-RayjZ-hJ21gN1723qnmOzo5rAFdXv0DJwrV-GEdFthxb7rJEdkOvU~BnTsmduJ-RJDAk7BE69gPhg3wHPUA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
-                    <div class="customer__feel-info">
-                    <h3 class="customer__feel-info-name">Hoàng Nam Tiến1</h3>
-                    <div class="customer__feel-info-position">Giám đốc</div>
-                    <img src="./assets/marks.svg" alt="">
-                    <p class="customer__feel-info-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-                <button class="customer__feel-info-button">CHI TIẾT DỰ ÁN<img src/></button>
-              </div>
-            </div>
-            <div class="customer__info">
-                <img class="slider__image" src="https://s3-alpha-sig.figma.com/img/1779/3ace/4835d96ef94d574349e2d8e07b85d618?Expires=1698019200&Signature=drxWcR1NsdmNOAMPQIrs9UjIOEO2Ym~DxzS-UVJUbJoLnHKYWDQpSVmpasdIKgAvJzOThFg1e47kQP29GtymOKUat3OT1Z6ID0zAKjRM19UVlzO3nmHmMecmIvsqas6sydaa5oqbqmEox9p2BxWbNuVLpMkGtEoqfqThOV2IBeEHV2BjT3g1NFFnKDSLSlazWfEv-iHfWFUugt99wbgPvh9dXmWcOj7O8VylQB2D~hGlqMK7LPaxHGbXjvNoeiUmPQ-RayjZ-hJ21gN1723qnmOzo5rAFdXv0DJwrV-GEdFthxb7rJEdkOvU~BnTsmduJ-RJDAk7BE69gPhg3wHPUA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
-                    <div class="customer__feel-info">
-                    <h3 class="customer__feel-info-name">Hoàng Nam Tiến1</h3>
-                    <div class="customer__feel-info-position">Giám đốc</div>
-                    <img src="./assets/marks.svg" alt="">
-                    <p class="customer__feel-info-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-                <button class="customer__feel-info-button">CHI TIẾT DỰ ÁN<img src/></button>
-              </div>
-            </div>
-            <div class="customer__info">
-                <img class="slider__image" src="https://s3-alpha-sig.figma.com/img/1779/3ace/4835d96ef94d574349e2d8e07b85d618?Expires=1698019200&Signature=drxWcR1NsdmNOAMPQIrs9UjIOEO2Ym~DxzS-UVJUbJoLnHKYWDQpSVmpasdIKgAvJzOThFg1e47kQP29GtymOKUat3OT1Z6ID0zAKjRM19UVlzO3nmHmMecmIvsqas6sydaa5oqbqmEox9p2BxWbNuVLpMkGtEoqfqThOV2IBeEHV2BjT3g1NFFnKDSLSlazWfEv-iHfWFUugt99wbgPvh9dXmWcOj7O8VylQB2D~hGlqMK7LPaxHGbXjvNoeiUmPQ-RayjZ-hJ21gN1723qnmOzo5rAFdXv0DJwrV-GEdFthxb7rJEdkOvU~BnTsmduJ-RJDAk7BE69gPhg3wHPUA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
-                           <div class="customer__feel-info">
-                <h3 class="customer__feel-info-name">Hoàng Nam Tiến1</h3>
-                <div class="customer__feel-info-position">Giám đốc</div>
-                <img src="./assets/marks.svg" alt="">
-                <p class="customer__feel-info-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-                <button class="customer__feel-info-button">CHI TIẾT DỰ ÁN<img src/></button>
-              </div>
-            </div>
-            <div class="customer__info">
-                <img class="slider__image" src="https://s3-alpha-sig.figma.com/img/1779/3ace/4835d96ef94d574349e2d8e07b85d618?Expires=1698019200&Signature=drxWcR1NsdmNOAMPQIrs9UjIOEO2Ym~DxzS-UVJUbJoLnHKYWDQpSVmpasdIKgAvJzOThFg1e47kQP29GtymOKUat3OT1Z6ID0zAKjRM19UVlzO3nmHmMecmIvsqas6sydaa5oqbqmEox9p2BxWbNuVLpMkGtEoqfqThOV2IBeEHV2BjT3g1NFFnKDSLSlazWfEv-iHfWFUugt99wbgPvh9dXmWcOj7O8VylQB2D~hGlqMK7LPaxHGbXjvNoeiUmPQ-RayjZ-hJ21gN1723qnmOzo5rAFdXv0DJwrV-GEdFthxb7rJEdkOvU~BnTsmduJ-RJDAk7BE69gPhg3wHPUA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
-                           <div class="customer__feel-info">
-                <h3 class="customer__feel-info-name">Hoàng Nam Tiến1</h3>
-                <div class="customer__feel-info-position">Giám đốc</div>
-                <img src="./assets/marks.svg" alt="">
-                <p class="customer__feel-info-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-                <button class="customer__feel-info-button">CHI TIẾT DỰ ÁN<img src/></button>
-              </div>
-            </div>
-            <div class="customer__info">
-                <img class="slider__image" src="https://s3-alpha-sig.figma.com/img/1779/3ace/4835d96ef94d574349e2d8e07b85d618?Expires=1698019200&Signature=drxWcR1NsdmNOAMPQIrs9UjIOEO2Ym~DxzS-UVJUbJoLnHKYWDQpSVmpasdIKgAvJzOThFg1e47kQP29GtymOKUat3OT1Z6ID0zAKjRM19UVlzO3nmHmMecmIvsqas6sydaa5oqbqmEox9p2BxWbNuVLpMkGtEoqfqThOV2IBeEHV2BjT3g1NFFnKDSLSlazWfEv-iHfWFUugt99wbgPvh9dXmWcOj7O8VylQB2D~hGlqMK7LPaxHGbXjvNoeiUmPQ-RayjZ-hJ21gN1723qnmOzo5rAFdXv0DJwrV-GEdFthxb7rJEdkOvU~BnTsmduJ-RJDAk7BE69gPhg3wHPUA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
-                           <div class="customer__feel-info">
-                <h3 class="customer__feel-info-name">Hoàng Nam Tiến1</h3>
-                <div class="customer__feel-info-position">Giám đốc</div>
-                <img src="./assets/marks.svg" alt="">
-                <p class="customer__feel-info-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-                <button class="customer__feel-info-button">CHI TIẾT DỰ ÁN<img src/></button>
-              </div>
-            </div>
-            <div class="customer__info">
-                <img class="slider__image" src="https://s3-alpha-sig.figma.com/img/1779/3ace/4835d96ef94d574349e2d8e07b85d618?Expires=1698019200&Signature=drxWcR1NsdmNOAMPQIrs9UjIOEO2Ym~DxzS-UVJUbJoLnHKYWDQpSVmpasdIKgAvJzOThFg1e47kQP29GtymOKUat3OT1Z6ID0zAKjRM19UVlzO3nmHmMecmIvsqas6sydaa5oqbqmEox9p2BxWbNuVLpMkGtEoqfqThOV2IBeEHV2BjT3g1NFFnKDSLSlazWfEv-iHfWFUugt99wbgPvh9dXmWcOj7O8VylQB2D~hGlqMK7LPaxHGbXjvNoeiUmPQ-RayjZ-hJ21gN1723qnmOzo5rAFdXv0DJwrV-GEdFthxb7rJEdkOvU~BnTsmduJ-RJDAk7BE69gPhg3wHPUA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
-                           <div class="customer__feel-info">
-                <h3 class="customer__feel-info-name">Hoàng Nam Tiến1</h3>
-                <div class="customer__feel-info-position">Giám đốc</div>
-                <img src="./assets/marks.svg" alt="">
-                <p class="customer__feel-info-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-                <button class="customer__feel-info-button">CHI TIẾT DỰ ÁN<img src/></button>
-              </div>
-            </div>
-            <div class="customer__info">
-                <img class="slider__image" src="https://s3-alpha-sig.figma.com/img/1779/3ace/4835d96ef94d574349e2d8e07b85d618?Expires=1698019200&Signature=drxWcR1NsdmNOAMPQIrs9UjIOEO2Ym~DxzS-UVJUbJoLnHKYWDQpSVmpasdIKgAvJzOThFg1e47kQP29GtymOKUat3OT1Z6ID0zAKjRM19UVlzO3nmHmMecmIvsqas6sydaa5oqbqmEox9p2BxWbNuVLpMkGtEoqfqThOV2IBeEHV2BjT3g1NFFnKDSLSlazWfEv-iHfWFUugt99wbgPvh9dXmWcOj7O8VylQB2D~hGlqMK7LPaxHGbXjvNoeiUmPQ-RayjZ-hJ21gN1723qnmOzo5rAFdXv0DJwrV-GEdFthxb7rJEdkOvU~BnTsmduJ-RJDAk7BE69gPhg3wHPUA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
-                           <div class="customer__feel-info">
-                <h3 class="customer__feel-info-name">Hoàng Nam Tiến1</h3>
-                <div class="customer__feel-info-position">Giám đốc</div>
-                <img src="./assets/marks.svg" alt="">
-                <p class="customer__feel-info-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-                <button class="customer__feel-info-button">CHI TIẾT DỰ ÁN<img src/></button>
-              </div>
-            </div>
-            <div class="customer__info">
-                <img class="slider__image" src="https://s3-alpha-sig.figma.com/img/1779/3ace/4835d96ef94d574349e2d8e07b85d618?Expires=1698019200&Signature=drxWcR1NsdmNOAMPQIrs9UjIOEO2Ym~DxzS-UVJUbJoLnHKYWDQpSVmpasdIKgAvJzOThFg1e47kQP29GtymOKUat3OT1Z6ID0zAKjRM19UVlzO3nmHmMecmIvsqas6sydaa5oqbqmEox9p2BxWbNuVLpMkGtEoqfqThOV2IBeEHV2BjT3g1NFFnKDSLSlazWfEv-iHfWFUugt99wbgPvh9dXmWcOj7O8VylQB2D~hGlqMK7LPaxHGbXjvNoeiUmPQ-RayjZ-hJ21gN1723qnmOzo5rAFdXv0DJwrV-GEdFthxb7rJEdkOvU~BnTsmduJ-RJDAk7BE69gPhg3wHPUA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
-                           <div class="customer__feel-info">
-                <h3 class="customer__feel-info-name">Hoàng Nam Tiến1</h3>
-                <div class="customer__feel-info-position">Giám đốc</div>
-                <img src="./assets/marks.svg" alt="">
-                <p class="customer__feel-info-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-                <button class="customer__feel-info-button">CHI TIẾT DỰ ÁN<img src/></button>
-              </div>
-            </div>
+      <div class="slider slider-x slide__1">
+        <div class="customer__info">
+          <img
+            class="slider__image"
+            src="https://s3-alpha-sig.figma.com/img/1779/3ace/4835d96ef94d574349e2d8e07b85d618?Expires=1698019200&Signature=drxWcR1NsdmNOAMPQIrs9UjIOEO2Ym~DxzS-UVJUbJoLnHKYWDQpSVmpasdIKgAvJzOThFg1e47kQP29GtymOKUat3OT1Z6ID0zAKjRM19UVlzO3nmHmMecmIvsqas6sydaa5oqbqmEox9p2BxWbNuVLpMkGtEoqfqThOV2IBeEHV2BjT3g1NFFnKDSLSlazWfEv-iHfWFUugt99wbgPvh9dXmWcOj7O8VylQB2D~hGlqMK7LPaxHGbXjvNoeiUmPQ-RayjZ-hJ21gN1723qnmOzo5rAFdXv0DJwrV-GEdFthxb7rJEdkOvU~BnTsmduJ-RJDAk7BE69gPhg3wHPUA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+            alt=""
+          />
+          <div class="customer__feel-info">
+            <h3 class="customer__feel-info-name">Hoàng Nam Tiến1</h3>
+            <div class="customer__feel-info-position">Giám đốc</div>
+            <img src="./assets/marks.svg" alt="" />
+            <p class="customer__feel-info-text">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book
+            </p>
+            <button class="customer__feel-info-button">
+              CHI TIẾT DỰ ÁN<img src />
+            </button>
+          </div>
         </div>
-        <div class="gadient__fade"></div>
-        <div class="slider slider-nav slide_2">
-            <div>
-              <img class="slider__image" src="https://s3-alpha-sig.figma.com/img/1779/3ace/4835d96ef94d574349e2d8e07b85d618?Expires=1698019200&Signature=drxWcR1NsdmNOAMPQIrs9UjIOEO2Ym~DxzS-UVJUbJoLnHKYWDQpSVmpasdIKgAvJzOThFg1e47kQP29GtymOKUat3OT1Z6ID0zAKjRM19UVlzO3nmHmMecmIvsqas6sydaa5oqbqmEox9p2BxWbNuVLpMkGtEoqfqThOV2IBeEHV2BjT3g1NFFnKDSLSlazWfEv-iHfWFUugt99wbgPvh9dXmWcOj7O8VylQB2D~hGlqMK7LPaxHGbXjvNoeiUmPQ-RayjZ-hJ21gN1723qnmOzo5rAFdXv0DJwrV-GEdFthxb7rJEdkOvU~BnTsmduJ-RJDAk7BE69gPhg3wHPUA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
-            </div>
-            <div>
-                <img class="slider__image" src="https://s3-alpha-sig.figma.com/img/1779/3ace/4835d96ef94d574349e2d8e07b85d618?Expires=1698019200&Signature=drxWcR1NsdmNOAMPQIrs9UjIOEO2Ym~DxzS-UVJUbJoLnHKYWDQpSVmpasdIKgAvJzOThFg1e47kQP29GtymOKUat3OT1Z6ID0zAKjRM19UVlzO3nmHmMecmIvsqas6sydaa5oqbqmEox9p2BxWbNuVLpMkGtEoqfqThOV2IBeEHV2BjT3g1NFFnKDSLSlazWfEv-iHfWFUugt99wbgPvh9dXmWcOj7O8VylQB2D~hGlqMK7LPaxHGbXjvNoeiUmPQ-RayjZ-hJ21gN1723qnmOzo5rAFdXv0DJwrV-GEdFthxb7rJEdkOvU~BnTsmduJ-RJDAk7BE69gPhg3wHPUA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
-                </div>
-            <div>
-                <img class="slider__image" src="https://s3-alpha-sig.figma.com/img/1779/3ace/4835d96ef94d574349e2d8e07b85d618?Expires=1698019200&Signature=drxWcR1NsdmNOAMPQIrs9UjIOEO2Ym~DxzS-UVJUbJoLnHKYWDQpSVmpasdIKgAvJzOThFg1e47kQP29GtymOKUat3OT1Z6ID0zAKjRM19UVlzO3nmHmMecmIvsqas6sydaa5oqbqmEox9p2BxWbNuVLpMkGtEoqfqThOV2IBeEHV2BjT3g1NFFnKDSLSlazWfEv-iHfWFUugt99wbgPvh9dXmWcOj7O8VylQB2D~hGlqMK7LPaxHGbXjvNoeiUmPQ-RayjZ-hJ21gN1723qnmOzo5rAFdXv0DJwrV-GEdFthxb7rJEdkOvU~BnTsmduJ-RJDAk7BE69gPhg3wHPUA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
-            </div>
-            <div>
-                <img class="slider__image" src="https://s3-alpha-sig.figma.com/img/1779/3ace/4835d96ef94d574349e2d8e07b85d618?Expires=1698019200&Signature=drxWcR1NsdmNOAMPQIrs9UjIOEO2Ym~DxzS-UVJUbJoLnHKYWDQpSVmpasdIKgAvJzOThFg1e47kQP29GtymOKUat3OT1Z6ID0zAKjRM19UVlzO3nmHmMecmIvsqas6sydaa5oqbqmEox9p2BxWbNuVLpMkGtEoqfqThOV2IBeEHV2BjT3g1NFFnKDSLSlazWfEv-iHfWFUugt99wbgPvh9dXmWcOj7O8VylQB2D~hGlqMK7LPaxHGbXjvNoeiUmPQ-RayjZ-hJ21gN1723qnmOzo5rAFdXv0DJwrV-GEdFthxb7rJEdkOvU~BnTsmduJ-RJDAk7BE69gPhg3wHPUA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
-            </div>
-            <div>
-                <img class="slider__image" src="https://s3-alpha-sig.figma.com/img/1779/3ace/4835d96ef94d574349e2d8e07b85d618?Expires=1698019200&Signature=drxWcR1NsdmNOAMPQIrs9UjIOEO2Ym~DxzS-UVJUbJoLnHKYWDQpSVmpasdIKgAvJzOThFg1e47kQP29GtymOKUat3OT1Z6ID0zAKjRM19UVlzO3nmHmMecmIvsqas6sydaa5oqbqmEox9p2BxWbNuVLpMkGtEoqfqThOV2IBeEHV2BjT3g1NFFnKDSLSlazWfEv-iHfWFUugt99wbgPvh9dXmWcOj7O8VylQB2D~hGlqMK7LPaxHGbXjvNoeiUmPQ-RayjZ-hJ21gN1723qnmOzo5rAFdXv0DJwrV-GEdFthxb7rJEdkOvU~BnTsmduJ-RJDAk7BE69gPhg3wHPUA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
-            </div>
-            <div>
-                <img class="slider__image" src="https://s3-alpha-sig.figma.com/img/1779/3ace/4835d96ef94d574349e2d8e07b85d618?Expires=1698019200&Signature=drxWcR1NsdmNOAMPQIrs9UjIOEO2Ym~DxzS-UVJUbJoLnHKYWDQpSVmpasdIKgAvJzOThFg1e47kQP29GtymOKUat3OT1Z6ID0zAKjRM19UVlzO3nmHmMecmIvsqas6sydaa5oqbqmEox9p2BxWbNuVLpMkGtEoqfqThOV2IBeEHV2BjT3g1NFFnKDSLSlazWfEv-iHfWFUugt99wbgPvh9dXmWcOj7O8VylQB2D~hGlqMK7LPaxHGbXjvNoeiUmPQ-RayjZ-hJ21gN1723qnmOzo5rAFdXv0DJwrV-GEdFthxb7rJEdkOvU~BnTsmduJ-RJDAk7BE69gPhg3wHPUA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
-            </div>
-            <div>
-                <img class="slider__image" src="https://s3-alpha-sig.figma.com/img/1779/3ace/4835d96ef94d574349e2d8e07b85d618?Expires=1698019200&Signature=drxWcR1NsdmNOAMPQIrs9UjIOEO2Ym~DxzS-UVJUbJoLnHKYWDQpSVmpasdIKgAvJzOThFg1e47kQP29GtymOKUat3OT1Z6ID0zAKjRM19UVlzO3nmHmMecmIvsqas6sydaa5oqbqmEox9p2BxWbNuVLpMkGtEoqfqThOV2IBeEHV2BjT3g1NFFnKDSLSlazWfEv-iHfWFUugt99wbgPvh9dXmWcOj7O8VylQB2D~hGlqMK7LPaxHGbXjvNoeiUmPQ-RayjZ-hJ21gN1723qnmOzo5rAFdXv0DJwrV-GEdFthxb7rJEdkOvU~BnTsmduJ-RJDAk7BE69gPhg3wHPUA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
-            </div>
-            <div>
-                <img class="slider__image" src="https://s3-alpha-sig.figma.com/img/1779/3ace/4835d96ef94d574349e2d8e07b85d618?Expires=1698019200&Signature=drxWcR1NsdmNOAMPQIrs9UjIOEO2Ym~DxzS-UVJUbJoLnHKYWDQpSVmpasdIKgAvJzOThFg1e47kQP29GtymOKUat3OT1Z6ID0zAKjRM19UVlzO3nmHmMecmIvsqas6sydaa5oqbqmEox9p2BxWbNuVLpMkGtEoqfqThOV2IBeEHV2BjT3g1NFFnKDSLSlazWfEv-iHfWFUugt99wbgPvh9dXmWcOj7O8VylQB2D~hGlqMK7LPaxHGbXjvNoeiUmPQ-RayjZ-hJ21gN1723qnmOzo5rAFdXv0DJwrV-GEdFthxb7rJEdkOvU~BnTsmduJ-RJDAk7BE69gPhg3wHPUA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
-            </div>
-            <div>
-                <img class="slider__image" src="https://s3-alpha-sig.figma.com/img/1779/3ace/4835d96ef94d574349e2d8e07b85d618?Expires=1698019200&Signature=drxWcR1NsdmNOAMPQIrs9UjIOEO2Ym~DxzS-UVJUbJoLnHKYWDQpSVmpasdIKgAvJzOThFg1e47kQP29GtymOKUat3OT1Z6ID0zAKjRM19UVlzO3nmHmMecmIvsqas6sydaa5oqbqmEox9p2BxWbNuVLpMkGtEoqfqThOV2IBeEHV2BjT3g1NFFnKDSLSlazWfEv-iHfWFUugt99wbgPvh9dXmWcOj7O8VylQB2D~hGlqMK7LPaxHGbXjvNoeiUmPQ-RayjZ-hJ21gN1723qnmOzo5rAFdXv0DJwrV-GEdFthxb7rJEdkOvU~BnTsmduJ-RJDAk7BE69gPhg3wHPUA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
-            </div>
+        <div class="customer__info">
+          <img
+            class="slider__image"
+            src="https://s3-alpha-sig.figma.com/img/1779/3ace/4835d96ef94d574349e2d8e07b85d618?Expires=1698019200&Signature=drxWcR1NsdmNOAMPQIrs9UjIOEO2Ym~DxzS-UVJUbJoLnHKYWDQpSVmpasdIKgAvJzOThFg1e47kQP29GtymOKUat3OT1Z6ID0zAKjRM19UVlzO3nmHmMecmIvsqas6sydaa5oqbqmEox9p2BxWbNuVLpMkGtEoqfqThOV2IBeEHV2BjT3g1NFFnKDSLSlazWfEv-iHfWFUugt99wbgPvh9dXmWcOj7O8VylQB2D~hGlqMK7LPaxHGbXjvNoeiUmPQ-RayjZ-hJ21gN1723qnmOzo5rAFdXv0DJwrV-GEdFthxb7rJEdkOvU~BnTsmduJ-RJDAk7BE69gPhg3wHPUA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+            alt=""
+          />
+          <div class="customer__feel-info">
+            <h3 class="customer__feel-info-name">Hoàng Nam Tiến1</h3>
+            <div class="customer__feel-info-position">Giám đốc</div>
+            <img src="./assets/marks.svg" alt="" />
+            <p class="customer__feel-info-text">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book
+            </p>
+            <button class="customer__feel-info-button">
+              CHI TIẾT DỰ ÁN<img src />
+            </button>
+          </div>
         </div>
+        <div class="customer__info">
+          <img
+            class="slider__image"
+            src="https://s3-alpha-sig.figma.com/img/1779/3ace/4835d96ef94d574349e2d8e07b85d618?Expires=1698019200&Signature=drxWcR1NsdmNOAMPQIrs9UjIOEO2Ym~DxzS-UVJUbJoLnHKYWDQpSVmpasdIKgAvJzOThFg1e47kQP29GtymOKUat3OT1Z6ID0zAKjRM19UVlzO3nmHmMecmIvsqas6sydaa5oqbqmEox9p2BxWbNuVLpMkGtEoqfqThOV2IBeEHV2BjT3g1NFFnKDSLSlazWfEv-iHfWFUugt99wbgPvh9dXmWcOj7O8VylQB2D~hGlqMK7LPaxHGbXjvNoeiUmPQ-RayjZ-hJ21gN1723qnmOzo5rAFdXv0DJwrV-GEdFthxb7rJEdkOvU~BnTsmduJ-RJDAk7BE69gPhg3wHPUA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+            alt=""
+          />
+          <div class="customer__feel-info">
+            <h3 class="customer__feel-info-name">Hoàng Nam Tiến1</h3>
+            <div class="customer__feel-info-position">Giám đốc</div>
+            <img src="./assets/marks.svg" alt="" />
+            <p class="customer__feel-info-text">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book
+            </p>
+            <button class="customer__feel-info-button">
+              CHI TIẾT DỰ ÁN<img src />
+            </button>
+          </div>
+        </div>
+        <div class="customer__info">
+          <img
+            class="slider__image"
+            src="https://s3-alpha-sig.figma.com/img/1779/3ace/4835d96ef94d574349e2d8e07b85d618?Expires=1698019200&Signature=drxWcR1NsdmNOAMPQIrs9UjIOEO2Ym~DxzS-UVJUbJoLnHKYWDQpSVmpasdIKgAvJzOThFg1e47kQP29GtymOKUat3OT1Z6ID0zAKjRM19UVlzO3nmHmMecmIvsqas6sydaa5oqbqmEox9p2BxWbNuVLpMkGtEoqfqThOV2IBeEHV2BjT3g1NFFnKDSLSlazWfEv-iHfWFUugt99wbgPvh9dXmWcOj7O8VylQB2D~hGlqMK7LPaxHGbXjvNoeiUmPQ-RayjZ-hJ21gN1723qnmOzo5rAFdXv0DJwrV-GEdFthxb7rJEdkOvU~BnTsmduJ-RJDAk7BE69gPhg3wHPUA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+            alt=""
+          />
+          <div class="customer__feel-info">
+            <h3 class="customer__feel-info-name">Hoàng Nam Tiến1</h3>
+            <div class="customer__feel-info-position">Giám đốc</div>
+            <img src="./assets/marks.svg" alt="" />
+            <p class="customer__feel-info-text">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book
+            </p>
+            <button class="customer__feel-info-button">
+              CHI TIẾT DỰ ÁN<img src />
+            </button>
+          </div>
+        </div>
+        <div class="customer__info">
+          <img
+            class="slider__image"
+            src="https://s3-alpha-sig.figma.com/img/1779/3ace/4835d96ef94d574349e2d8e07b85d618?Expires=1698019200&Signature=drxWcR1NsdmNOAMPQIrs9UjIOEO2Ym~DxzS-UVJUbJoLnHKYWDQpSVmpasdIKgAvJzOThFg1e47kQP29GtymOKUat3OT1Z6ID0zAKjRM19UVlzO3nmHmMecmIvsqas6sydaa5oqbqmEox9p2BxWbNuVLpMkGtEoqfqThOV2IBeEHV2BjT3g1NFFnKDSLSlazWfEv-iHfWFUugt99wbgPvh9dXmWcOj7O8VylQB2D~hGlqMK7LPaxHGbXjvNoeiUmPQ-RayjZ-hJ21gN1723qnmOzo5rAFdXv0DJwrV-GEdFthxb7rJEdkOvU~BnTsmduJ-RJDAk7BE69gPhg3wHPUA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+            alt=""
+          />
+          <div class="customer__feel-info">
+            <h3 class="customer__feel-info-name">Hoàng Nam Tiến1</h3>
+            <div class="customer__feel-info-position">Giám đốc</div>
+            <img src="./assets/marks.svg" alt="" />
+            <p class="customer__feel-info-text">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book
+            </p>
+            <button class="customer__feel-info-button">
+              CHI TIẾT DỰ ÁN<img src />
+            </button>
+          </div>
+        </div>
+        <div class="customer__info">
+          <img
+            class="slider__image"
+            src="https://s3-alpha-sig.figma.com/img/1779/3ace/4835d96ef94d574349e2d8e07b85d618?Expires=1698019200&Signature=drxWcR1NsdmNOAMPQIrs9UjIOEO2Ym~DxzS-UVJUbJoLnHKYWDQpSVmpasdIKgAvJzOThFg1e47kQP29GtymOKUat3OT1Z6ID0zAKjRM19UVlzO3nmHmMecmIvsqas6sydaa5oqbqmEox9p2BxWbNuVLpMkGtEoqfqThOV2IBeEHV2BjT3g1NFFnKDSLSlazWfEv-iHfWFUugt99wbgPvh9dXmWcOj7O8VylQB2D~hGlqMK7LPaxHGbXjvNoeiUmPQ-RayjZ-hJ21gN1723qnmOzo5rAFdXv0DJwrV-GEdFthxb7rJEdkOvU~BnTsmduJ-RJDAk7BE69gPhg3wHPUA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+            alt=""
+          />
+          <div class="customer__feel-info">
+            <h3 class="customer__feel-info-name">Hoàng Nam Tiến1</h3>
+            <div class="customer__feel-info-position">Giám đốc</div>
+            <img src="./assets/marks.svg" alt="" />
+            <p class="customer__feel-info-text">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book
+            </p>
+            <button class="customer__feel-info-button">
+              CHI TIẾT DỰ ÁN<img src />
+            </button>
+          </div>
+        </div>
+        <div class="customer__info">
+          <img
+            class="slider__image"
+            src="https://s3-alpha-sig.figma.com/img/1779/3ace/4835d96ef94d574349e2d8e07b85d618?Expires=1698019200&Signature=drxWcR1NsdmNOAMPQIrs9UjIOEO2Ym~DxzS-UVJUbJoLnHKYWDQpSVmpasdIKgAvJzOThFg1e47kQP29GtymOKUat3OT1Z6ID0zAKjRM19UVlzO3nmHmMecmIvsqas6sydaa5oqbqmEox9p2BxWbNuVLpMkGtEoqfqThOV2IBeEHV2BjT3g1NFFnKDSLSlazWfEv-iHfWFUugt99wbgPvh9dXmWcOj7O8VylQB2D~hGlqMK7LPaxHGbXjvNoeiUmPQ-RayjZ-hJ21gN1723qnmOzo5rAFdXv0DJwrV-GEdFthxb7rJEdkOvU~BnTsmduJ-RJDAk7BE69gPhg3wHPUA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+            alt=""
+          />
+          <div class="customer__feel-info">
+            <h3 class="customer__feel-info-name">Hoàng Nam Tiến1</h3>
+            <div class="customer__feel-info-position">Giám đốc</div>
+            <img src="./assets/marks.svg" alt="" />
+            <p class="customer__feel-info-text">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book
+            </p>
+            <button class="customer__feel-info-button">
+              CHI TIẾT DỰ ÁN<img src />
+            </button>
+          </div>
+        </div>
+        <div class="customer__info">
+          <img
+            class="slider__image"
+            src="https://s3-alpha-sig.figma.com/img/1779/3ace/4835d96ef94d574349e2d8e07b85d618?Expires=1698019200&Signature=drxWcR1NsdmNOAMPQIrs9UjIOEO2Ym~DxzS-UVJUbJoLnHKYWDQpSVmpasdIKgAvJzOThFg1e47kQP29GtymOKUat3OT1Z6ID0zAKjRM19UVlzO3nmHmMecmIvsqas6sydaa5oqbqmEox9p2BxWbNuVLpMkGtEoqfqThOV2IBeEHV2BjT3g1NFFnKDSLSlazWfEv-iHfWFUugt99wbgPvh9dXmWcOj7O8VylQB2D~hGlqMK7LPaxHGbXjvNoeiUmPQ-RayjZ-hJ21gN1723qnmOzo5rAFdXv0DJwrV-GEdFthxb7rJEdkOvU~BnTsmduJ-RJDAk7BE69gPhg3wHPUA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+            alt=""
+          />
+          <div class="customer__feel-info">
+            <h3 class="customer__feel-info-name">Hoàng Nam Tiến1</h3>
+            <div class="customer__feel-info-position">Giám đốc</div>
+            <img src="./assets/marks.svg" alt="" />
+            <p class="customer__feel-info-text">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book
+            </p>
+            <button class="customer__feel-info-button">
+              CHI TIẾT DỰ ÁN<img src />
+            </button>
+          </div>
+        </div>
+        <div class="customer__info">
+          <img
+            class="slider__image"
+            src="https://s3-alpha-sig.figma.com/img/1779/3ace/4835d96ef94d574349e2d8e07b85d618?Expires=1698019200&Signature=drxWcR1NsdmNOAMPQIrs9UjIOEO2Ym~DxzS-UVJUbJoLnHKYWDQpSVmpasdIKgAvJzOThFg1e47kQP29GtymOKUat3OT1Z6ID0zAKjRM19UVlzO3nmHmMecmIvsqas6sydaa5oqbqmEox9p2BxWbNuVLpMkGtEoqfqThOV2IBeEHV2BjT3g1NFFnKDSLSlazWfEv-iHfWFUugt99wbgPvh9dXmWcOj7O8VylQB2D~hGlqMK7LPaxHGbXjvNoeiUmPQ-RayjZ-hJ21gN1723qnmOzo5rAFdXv0DJwrV-GEdFthxb7rJEdkOvU~BnTsmduJ-RJDAk7BE69gPhg3wHPUA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+            alt=""
+          />
+          <div class="customer__feel-info">
+            <h3 class="customer__feel-info-name">Hoàng Nam Tiến1</h3>
+            <div class="customer__feel-info-position">Giám đốc</div>
+            <img src="./assets/marks.svg" alt="" />
+            <p class="customer__feel-info-text">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book
+            </p>
+            <button class="customer__feel-info-button">
+              CHI TIẾT DỰ ÁN<img src />
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="gadient__fade"></div>
+      <div class="slider slider-nav slide_2">
+        <div>
+          <img
+            class="slider__image"
+            src="https://s3-alpha-sig.figma.com/img/1779/3ace/4835d96ef94d574349e2d8e07b85d618?Expires=1698019200&Signature=drxWcR1NsdmNOAMPQIrs9UjIOEO2Ym~DxzS-UVJUbJoLnHKYWDQpSVmpasdIKgAvJzOThFg1e47kQP29GtymOKUat3OT1Z6ID0zAKjRM19UVlzO3nmHmMecmIvsqas6sydaa5oqbqmEox9p2BxWbNuVLpMkGtEoqfqThOV2IBeEHV2BjT3g1NFFnKDSLSlazWfEv-iHfWFUugt99wbgPvh9dXmWcOj7O8VylQB2D~hGlqMK7LPaxHGbXjvNoeiUmPQ-RayjZ-hJ21gN1723qnmOzo5rAFdXv0DJwrV-GEdFthxb7rJEdkOvU~BnTsmduJ-RJDAk7BE69gPhg3wHPUA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="slider__image"
+            src="https://s3-alpha-sig.figma.com/img/1779/3ace/4835d96ef94d574349e2d8e07b85d618?Expires=1698019200&Signature=drxWcR1NsdmNOAMPQIrs9UjIOEO2Ym~DxzS-UVJUbJoLnHKYWDQpSVmpasdIKgAvJzOThFg1e47kQP29GtymOKUat3OT1Z6ID0zAKjRM19UVlzO3nmHmMecmIvsqas6sydaa5oqbqmEox9p2BxWbNuVLpMkGtEoqfqThOV2IBeEHV2BjT3g1NFFnKDSLSlazWfEv-iHfWFUugt99wbgPvh9dXmWcOj7O8VylQB2D~hGlqMK7LPaxHGbXjvNoeiUmPQ-RayjZ-hJ21gN1723qnmOzo5rAFdXv0DJwrV-GEdFthxb7rJEdkOvU~BnTsmduJ-RJDAk7BE69gPhg3wHPUA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="slider__image"
+            src="https://s3-alpha-sig.figma.com/img/1779/3ace/4835d96ef94d574349e2d8e07b85d618?Expires=1698019200&Signature=drxWcR1NsdmNOAMPQIrs9UjIOEO2Ym~DxzS-UVJUbJoLnHKYWDQpSVmpasdIKgAvJzOThFg1e47kQP29GtymOKUat3OT1Z6ID0zAKjRM19UVlzO3nmHmMecmIvsqas6sydaa5oqbqmEox9p2BxWbNuVLpMkGtEoqfqThOV2IBeEHV2BjT3g1NFFnKDSLSlazWfEv-iHfWFUugt99wbgPvh9dXmWcOj7O8VylQB2D~hGlqMK7LPaxHGbXjvNoeiUmPQ-RayjZ-hJ21gN1723qnmOzo5rAFdXv0DJwrV-GEdFthxb7rJEdkOvU~BnTsmduJ-RJDAk7BE69gPhg3wHPUA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="slider__image"
+            src="https://s3-alpha-sig.figma.com/img/1779/3ace/4835d96ef94d574349e2d8e07b85d618?Expires=1698019200&Signature=drxWcR1NsdmNOAMPQIrs9UjIOEO2Ym~DxzS-UVJUbJoLnHKYWDQpSVmpasdIKgAvJzOThFg1e47kQP29GtymOKUat3OT1Z6ID0zAKjRM19UVlzO3nmHmMecmIvsqas6sydaa5oqbqmEox9p2BxWbNuVLpMkGtEoqfqThOV2IBeEHV2BjT3g1NFFnKDSLSlazWfEv-iHfWFUugt99wbgPvh9dXmWcOj7O8VylQB2D~hGlqMK7LPaxHGbXjvNoeiUmPQ-RayjZ-hJ21gN1723qnmOzo5rAFdXv0DJwrV-GEdFthxb7rJEdkOvU~BnTsmduJ-RJDAk7BE69gPhg3wHPUA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="slider__image"
+            src="https://s3-alpha-sig.figma.com/img/1779/3ace/4835d96ef94d574349e2d8e07b85d618?Expires=1698019200&Signature=drxWcR1NsdmNOAMPQIrs9UjIOEO2Ym~DxzS-UVJUbJoLnHKYWDQpSVmpasdIKgAvJzOThFg1e47kQP29GtymOKUat3OT1Z6ID0zAKjRM19UVlzO3nmHmMecmIvsqas6sydaa5oqbqmEox9p2BxWbNuVLpMkGtEoqfqThOV2IBeEHV2BjT3g1NFFnKDSLSlazWfEv-iHfWFUugt99wbgPvh9dXmWcOj7O8VylQB2D~hGlqMK7LPaxHGbXjvNoeiUmPQ-RayjZ-hJ21gN1723qnmOzo5rAFdXv0DJwrV-GEdFthxb7rJEdkOvU~BnTsmduJ-RJDAk7BE69gPhg3wHPUA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="slider__image"
+            src="https://s3-alpha-sig.figma.com/img/1779/3ace/4835d96ef94d574349e2d8e07b85d618?Expires=1698019200&Signature=drxWcR1NsdmNOAMPQIrs9UjIOEO2Ym~DxzS-UVJUbJoLnHKYWDQpSVmpasdIKgAvJzOThFg1e47kQP29GtymOKUat3OT1Z6ID0zAKjRM19UVlzO3nmHmMecmIvsqas6sydaa5oqbqmEox9p2BxWbNuVLpMkGtEoqfqThOV2IBeEHV2BjT3g1NFFnKDSLSlazWfEv-iHfWFUugt99wbgPvh9dXmWcOj7O8VylQB2D~hGlqMK7LPaxHGbXjvNoeiUmPQ-RayjZ-hJ21gN1723qnmOzo5rAFdXv0DJwrV-GEdFthxb7rJEdkOvU~BnTsmduJ-RJDAk7BE69gPhg3wHPUA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="slider__image"
+            src="https://s3-alpha-sig.figma.com/img/1779/3ace/4835d96ef94d574349e2d8e07b85d618?Expires=1698019200&Signature=drxWcR1NsdmNOAMPQIrs9UjIOEO2Ym~DxzS-UVJUbJoLnHKYWDQpSVmpasdIKgAvJzOThFg1e47kQP29GtymOKUat3OT1Z6ID0zAKjRM19UVlzO3nmHmMecmIvsqas6sydaa5oqbqmEox9p2BxWbNuVLpMkGtEoqfqThOV2IBeEHV2BjT3g1NFFnKDSLSlazWfEv-iHfWFUugt99wbgPvh9dXmWcOj7O8VylQB2D~hGlqMK7LPaxHGbXjvNoeiUmPQ-RayjZ-hJ21gN1723qnmOzo5rAFdXv0DJwrV-GEdFthxb7rJEdkOvU~BnTsmduJ-RJDAk7BE69gPhg3wHPUA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="slider__image"
+            src="https://s3-alpha-sig.figma.com/img/1779/3ace/4835d96ef94d574349e2d8e07b85d618?Expires=1698019200&Signature=drxWcR1NsdmNOAMPQIrs9UjIOEO2Ym~DxzS-UVJUbJoLnHKYWDQpSVmpasdIKgAvJzOThFg1e47kQP29GtymOKUat3OT1Z6ID0zAKjRM19UVlzO3nmHmMecmIvsqas6sydaa5oqbqmEox9p2BxWbNuVLpMkGtEoqfqThOV2IBeEHV2BjT3g1NFFnKDSLSlazWfEv-iHfWFUugt99wbgPvh9dXmWcOj7O8VylQB2D~hGlqMK7LPaxHGbXjvNoeiUmPQ-RayjZ-hJ21gN1723qnmOzo5rAFdXv0DJwrV-GEdFthxb7rJEdkOvU~BnTsmduJ-RJDAk7BE69gPhg3wHPUA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="slider__image"
+            src="https://s3-alpha-sig.figma.com/img/1779/3ace/4835d96ef94d574349e2d8e07b85d618?Expires=1698019200&Signature=drxWcR1NsdmNOAMPQIrs9UjIOEO2Ym~DxzS-UVJUbJoLnHKYWDQpSVmpasdIKgAvJzOThFg1e47kQP29GtymOKUat3OT1Z6ID0zAKjRM19UVlzO3nmHmMecmIvsqas6sydaa5oqbqmEox9p2BxWbNuVLpMkGtEoqfqThOV2IBeEHV2BjT3g1NFFnKDSLSlazWfEv-iHfWFUugt99wbgPvh9dXmWcOj7O8VylQB2D~hGlqMK7LPaxHGbXjvNoeiUmPQ-RayjZ-hJ21gN1723qnmOzo5rAFdXv0DJwrV-GEdFthxb7rJEdkOvU~BnTsmduJ-RJDAk7BE69gPhg3wHPUA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+            alt=""
+          />
+        </div>
+      </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
     <script>
-        $('.slider-x').slick({
-            arrows: true,
-            asNavFor: '.slider-nav',
-            speed: 1000
-        });
+      $(".slider-x").slick({
+        arrows: true,
+        asNavFor: ".slider-nav",
+        speed: 1000,
+      });
 
-        $('.slider-nav').slick({
-            arrows: true,
-            asNavFor: '.slider-x',
-            centerMode: true,
-            focusOnSelect: true,
-            slidesToShow: 2,
-            speed: 1000
-        });
+      $(".slider-nav").slick({
+        arrows: true,
+        asNavFor: ".slider-x",
+        centerMode: true,
+        focusOnSelect: true,
+        slidesToShow: 2,
+        speed: 1000,
+      });
     </script>
-</body>
+  </body>
 </html>
